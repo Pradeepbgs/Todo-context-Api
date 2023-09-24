@@ -47,10 +47,10 @@ function App() {
                     <div className="flex flex-wrap gap-y-3">
                         {/*Loop and Add TodoItem here */}
                         {
-                          todos.map((todo) => ( 
+                          todos.map((todo, index) => ( 
                               // <TodoItem todo={todo} key={todo.id}  />
                               // or 
-                              <div key={todo.id} className='w-full'>
+                              <div key={index} className='w-full'>
                                 <TodoItem todo={todo}/>
                               </div>
                           ))
